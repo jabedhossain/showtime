@@ -13,3 +13,11 @@ function setTimeandDate(timeElement, dataElement){
 	dataElement.innerHTML = date; 
 }
 //end-region
+//region {calls}
+console.log(consoleGreeting);
+document.addEventListener("DOMContentLoader", function(dcle){
+	var timeElement = document.getElementById(timeId);
+	var dataElement = document.getElementById(dateId);
+	setTimeandDate(timeElement, dataElement);
+});
+//end-region
